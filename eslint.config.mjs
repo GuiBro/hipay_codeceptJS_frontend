@@ -17,6 +17,11 @@ export default defineConfig([
         When: "readonly",
         Then: "readonly",
         inject: "readonly",
-        actor: "readonly"}} },
+        actor: "readonly"}},
+    rules: {
+      "indent": ["error", 2],
+      "no-multi-spaces": "error"
+    }
+  },
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
 ]);
