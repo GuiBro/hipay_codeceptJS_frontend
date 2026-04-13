@@ -16,8 +16,9 @@ When('I request a tool demo', () => {
 });
 
 When('I fill the contact form with incomplete details', () => {
-  I.appendField(fraudManagementPage.champs_contact.last_name, 'Vador')
-  I.appendField(fraudManagementPage.champs_contact.phone_number, '0123456789')
+  I.fillFraudContactForm();
+  // I.appendField(fraudManagementPage.champs_contact.last_name, 'Vador')
+  // I.appendField(fraudManagementPage.champs_contact.phone_number, '0123456789')
 });
 
 When('I submit the contact form', () => {

@@ -1,10 +1,13 @@
-// in this file you can append custom step methods to 'I' object
+const fraudManagementPage = require('./pages/FraudManagement.js')
 
 module.exports = function() {
   return actor({
+    user_lastname: 'Vador',
+    user_phone: '0123456789',
 
-    // Define custom steps here, use 'this' to access default methods of I.
-    // It is recommended to place a general 'login' function here.
-
+    fillFraudContactForm() {
+      this.appendField(fraudManagementPage.champs_contact.last_name, this.user_lastname),
+      this.appendField(fraudManagementPage.champs_contact.phone_number, this.user_phone)
+    }
   });
 }
