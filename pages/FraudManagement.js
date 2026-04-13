@@ -66,7 +66,7 @@ module.exports = {
         I.click(this.buttons.slider_next);
       }
     }
-  )
+    )
   }
 
 }
