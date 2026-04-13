@@ -33,7 +33,12 @@ exports.config = {
     eachElement: {
       enabled: true
     },
-    pauseOnFail: {}
+    pauseOnFail: {},
+    allure: {
+      enabled: true,
+      require: "allure-codeceptjs",
+      outputDir: 'output/allure-results'
+    }
   },
   stepTimeout: 0,
   stepTimeoutOverride: [{
