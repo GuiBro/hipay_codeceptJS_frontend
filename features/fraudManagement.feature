@@ -5,6 +5,7 @@ Feature: Fraud Management Page Display
 
   Background:
     Given I am on the fraud management page
+    And I accept cookies
 
   Scenario: Error message on incomplete contact form
     When I request a tool demo

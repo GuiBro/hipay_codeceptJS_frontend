@@ -1,5 +1,4 @@
-const { I, fraudManagementPage } = inject();
-// Add in your custom step files
+const { I, fraudManagementPage, cookiesHandlingPage } = inject();
 
 //  Background
 Given('I am on the fraud management page', () => {
@@ -7,6 +6,10 @@ Given('I am on the fraud management page', () => {
   I.see(fraudManagementPage.label.title);
   I.see(fraudManagementPage.label.description);
 });
+
+When('I accept cookies', () => {
+  cookiesHandlingPage.acceptCookies();
+})
 
 //  Scenario 1
 When('I request a tool demo', () => {
@@ -17,8 +20,6 @@ When('I request a tool demo', () => {
 
 When('I fill the contact form with incomplete details', () => {
   I.fillFraudContactForm();
-  // I.appendField(fraudManagementPage.champs_contact.last_name, 'Vador')
-  // I.appendField(fraudManagementPage.champs_contact.phone_number, '0123456789')
 });
 
 When('I submit the contact form', () => {

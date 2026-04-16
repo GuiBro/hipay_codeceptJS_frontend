@@ -9,7 +9,8 @@ exports.config = {
   },
   include: {
     I: './steps_file.js',
-    fraudManagementPage: './pages/FraudManagement.js'
+    fraudManagementPage: './pages/FraudManagement.js',
+    cookiesHandlingPage: "./pages/cookiesHandling.js",
   },
   mocha: {},
   bootstrap: null,
@@ -42,13 +43,13 @@ exports.config = {
   },
   stepTimeout: 0,
   stepTimeoutOverride: [{
-    pattern: 'wait.*',
-    timeout: 0
-  },
-  {
-    pattern: 'amOnPage',
-    timeout: 0
-  }
+      pattern: 'wait.*',
+      timeout: 0
+    },
+    {
+      pattern: 'amOnPage',
+      timeout: 0
+    }
   ],
   tests: './*_test.js',
   name: 'test frontend JS'
