@@ -17,6 +17,8 @@ L'objectif est de valider la stabilité et l'expérience utilisateur (UX) de la 
 
 **Formulaires de contact** : Vérification de la présence et de la soumission (ou tentative de soumission) des formulaires pour les prospects intéressés par les solutions.  
 
+**Tests multi navigateurs** :  Intégrer des run sur plusieurs navigateurs (chrome, firefox, safari..)
+
 ### B. Stratégie de robustesse (Sécurité et Fiabilité)  
 
 Dans le formulaire de contact, il peut y avoir un risque en terme de cybersécurité, plusieurs tests peuvent les prévenir  
