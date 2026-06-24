@@ -1,7 +1,7 @@
 const { I, fraudManagementPage, cookiesHandlingPage } = inject();
 
 //  Background
-Given('I am on Mobiapps website page', () => {
+Given('I am on the fraud management page', () => {
   I.amOnPage(fraudManagementPage.url);
   I.see(fraudManagementPage.label.title);
   I.see(fraudManagementPage.label.description);

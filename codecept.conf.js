@@ -3,7 +3,7 @@ exports.config = {
   helpers: {
     Playwright: {
       browser: 'chromium',
-      url: 'https://hipay.com/en/',
+      url: 'https://mobiapps.fr/',
       show: true
     }
   },
@@ -11,6 +11,9 @@ exports.config = {
     I: './steps_file.js',
     fraudManagementPage: './pages/FraudManagement.js',
     cookiesHandlingPage: "./pages/cookiesHandling.js",
+    mobiappsHomepagePage: "./pages/MobiappsHomepage.js",
+
+    topbarMenuPage: "./pages/TopbarMenu.js",
   },
   mocha: {},
   bootstrap: null,
@@ -43,13 +46,13 @@ exports.config = {
   },
   stepTimeout: 0,
   stepTimeoutOverride: [{
-    pattern: 'wait.*',
-    timeout: 0
-  },
-  {
-    pattern: 'amOnPage',
-    timeout: 0
-  }
+      pattern: 'wait.*',
+      timeout: 0
+    },
+    {
+      pattern: 'amOnPage',
+      timeout: 0
+    }
   ],
   tests: './*_test.js',
   name: 'test frontend JS'
